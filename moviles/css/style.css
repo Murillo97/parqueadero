@@ -1,0 +1,280 @@
+@font-face {
+  src: url("../fuentes/Poppins/Poppins-Regular.ttf");
+  font-family: 'Poppins';
+
+}
+@font-face {
+  src: url("../fuentes/Poppins/Poppins-ExtraBold.ttf");
+  font-family: 'Poppins Bold';
+}
+
+body,html{
+  font-family: 'Poppins';
+
+}
+h1,h2,h3,h4,h5{
+  font-family: 'Poppins Bold';
+}
+
+.inicio{
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+.eliminar
+{
+
+   border-radius: 5px;
+}
+
+*{
+  margin: 0px;
+padding: 0px;
+}
+.menu_principal{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 55px;
+  background: #6AC7FF;
+  z-index: 2000;
+}
+.menu_principal .navegacion{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.menu_principal .navegacion .btn-bar .flaticon-menu{
+  position: relative;
+  right: 10px;
+  display: block;
+  text-align: center;
+
+}
+.menu_principal .navegacion .btn-bar .flaticon-menu:before{
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+
+}
+
+
+.menu_principal .navegacion .btn-bar{
+  position: absolute;
+  left: 15px;
+  background: none;
+  border: none;
+  text-align: center;
+
+
+}
+.menu_principal .navegacion .titulo{
+color: #ffffff;
+}
+
+.menu_principal .menu-lateral{
+  position: fixed;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: red;
+  display: block;
+  visibility: hidden;
+  transition: all .5s;
+}
+.menu_principal .menu-lateral.active{
+left: 0%;
+visibility: visible;
+transition: all .5s;
+}
+
+.menu_principal .menu-lateral .panel_uno{
+  position: relative;
+   width: 100%;
+   height: 35%;
+   background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("../imagenes/fondo1.jpg");
+   background-size: cover;
+}
+.menu_principal .menu-lateral .panel_dos{
+  position: relative;
+   width: 100%;
+   height: 67%;
+   background: #fff;
+}
+
+.menu_principal .menu-lateral .panel_dos .contenedor-items{
+  position: relative;
+  top: 12px;
+   width: 88%;
+   height: 80%;
+   margin: auto;
+   background: #fff;
+}
+
+.menu_principal .menu-lateral .panel_dos .contenedor-items .items{
+  list-style: none;
+}
+.menu_principal .menu-lateral .panel_dos .contenedor-items .items .section{
+position: relative;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #323232;
+}
+.menu_principal .menu-lateral .panel_uno .imagen-usuario{
+  position: relative;
+top: 20px;
+left: 25px;
+width: 50px;
+height: 50px;
+}
+
+.menu_principal .menu-lateral .panel_uno .contenedor-info{
+  position: absolute;
+width: 85%;
+left: 25px;
+  bottom: 10px;
+}
+.menu_principal .menu-lateral .panel_uno .contenedor-info .nombre-usuario{
+  color: #fff;
+  text-shadow: 0px 2px, 6px rgba(0, 0, 0, 0.8);
+}
+
+.formu
+{
+  position: relative;
+  top: 55px;
+  width: 100%;
+  height: 90%;
+  max-height: 3600px;
+  background: #2E3740;
+}
+
+.container{
+  position: relative;
+  top: 55px;
+  width: 100%;
+  height: 90%;
+  max-height: 3600px;
+  background: #fff;
+
+
+}
+.container p{
+  position: relative;
+  top: 40px;
+  left: 10px;
+  right: -10px;
+  text-align: justify;
+color: #323232;
+}
+
+
+/* Estilos contenor formulario */
+
+.container .formulario
+{
+position: relative;
+width: 250px;
+margin: auto;
+
+}
+
+h1
+{
+  text-align: center;
+}
+
+.container .formulario .input_field
+{
+position: relative;
+width: 80%;
+height: 50px;
+margin: auto;
+right: 10px;
+}
+.container .formulario .input_field .field
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  border-top-left-radius: 6px;
+  border:1px solid #A5A5A5;
+  outline: none;
+  background:
+}
+.container .formulario .input_field .campo_email
+{
+
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.container .formulario .input_field .campo_contraseña{
+
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.container .formulario .input_field .input_button{
+
+  margin-top: 15px;
+  width: 100%;
+}
+
+.container .formulario .input_field .input_button .btn{
+position: relative;
+display: block;
+width: 108%;
+padding: 15px;
+
+}
+.background
+{
+  background: #ABF590;
+}
+
+
+
+
+
+.container .imagen-basket{
+
+  width: 100%;
+
+}
+table {
+
+  position:relative;
+   font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 35px;  width:30px; text-align: left;    border-collapse: collapse;
+   }
+
+th {     font-size: 13px;     font-weight: normal;     padding: 8px;     background: #b9c9fe;
+    border-top: 4px solid #aabcfe;    border-bottom: 1px solid #fff; color: #039;
+   }
+
+td {    padding: 8px;     background: #e8edff;     border-bottom: 1px solid #fff;
+    color: #669;    border-top: 1px solid transparent; }
+
+tr:hover td { background: #d0dafd; color: #339; }
+
+footer{
+
+  background-color: #1AC1FF;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 60px;
+   color: white;
+   font-size: 10px;
+   text-align: center;
+   
+}
