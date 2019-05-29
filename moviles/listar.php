@@ -27,7 +27,7 @@ $registros = $conexion->query("SELECT * FROM vehiculos WHERE placa='$placa'");
    <link rel="stylesheet" href="css/style.css">
      <link rel="stylesheet" href="css/style_registro.css">
 
-   <link rel="stylesheet" href="/icono/font/Flaticon.css">
+   <link rel="stylesheet" href="icono/font/Flaticon.css">
  </head>
   <body>
     <header class="menu_principal">
@@ -94,5 +94,7 @@ $registros = $conexion->query("SELECT * FROM vehiculos WHERE placa='$placa'");
 </div>
 
 </div>
+
+<script src="js/desplazamiento.js"></script>
   </body>
 </html>
