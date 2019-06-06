@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registro</title>
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_registro.css">
+
+  <link rel="stylesheet" href="icono/font/Flaticon.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  </head>
+  <body>
+  <header class="menu_principal">
+    <nav class="navegacion">
+      <button type="button" name="button" class="btn-bar"><span class="fas fa-bars"></span></button>
+      <h1 class="titulo">Parqueadero</h1>
+ </nav>
+  <nav class="menu-lateral">
+    <div class="panel_uno">
+    <img src="imagenes/user.png" alt="" class="imagen-usuario">
+    <div class="contenedor-info">
+    <p class="nombre-usuario">parking</p>
+    </div>
+    </div>
+    <div class="panel_dos">
+      <ul class="contenedor-items">
+        <li class="items">
+        <a href="index.html?" class="section">Home</a>
+      </li>
+
+        <li class="items">
+        <a href="resgistro.html?" class="section">Registrar</a>
+        <li class="items">
+        <a href="buscar.html?" class="section">Consultar</a>
+        </li>
+        <li class="items">
+        <a href="actualizar.html?" class="section">Actualizar</a>
+        </li>
+        <li class="items">
+        <a href="Borrar.html?" class="section">Borrar</a>
+        </li>
+        <li class="items">
+        <a href="Contactenos.html?" class="section">Contactenos</a>
+        </li>
+    </li>
+
+      </ul>
+    </div>
+  </nav>
+</header>
+<div class="container">
+
+  <div class='login'>
+
+    <h2>Ingreso de vehiculo</h2>
+    <input type='text' name='placa' class="fieldplaca"  placeholder='Placa'  required="">
+    <input type='text' name='marca' class="fieldmarca" placeholder='Marca de vehiculo'  required="">
+    <input type='text' name='hora_entrada' class="fieldhora" placeholder='Hora de entrada'required="">
+
+    <input type='submit' class='animated btn-registrar'  value='Registrar' >
+
+
+  </div>
+
+    </div>
+<script src="js/desplazamiento.js"></script>
+<script>
+  var btn_registro = document.querySelector('.btn-registrar');
+
+  btn_registro.addEventListener('click', function(e){
+    e.preventDefault();
+
+    var fieldplaca = document.querySelector('.fieldplaca').value,
+        fieldmarca = document.querySelector('.fieldmarca').value,
+        fieldhora = document.querySelector('.fieldhora').value,
+
+        $.post('http://localhost/moviles/registro.php',{
+          place:fieldplaca,
+          marca:fieldmarca,
+          hora_entrada:fieldhora
+        }, function(response){
+          console.log(response);
+          alert(response);
+        });
+  });
+</script>
+</body>
+<footer>
+  <p>Aplicacion desarrollada por:</p>
+  <p>Mauricio Murillo Cortes </p>
+  <p>Cristian Hernadéz</p>
+  <p>© 2019 Copyright</p>
+</footer>
+</html>
